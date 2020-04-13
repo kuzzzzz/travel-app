@@ -1,19 +1,19 @@
-# Webpack Express Example App
+# Udacity Project: Evaluate a news article with Natural Language Processing
 
-The goal of this repo is be an example of a basic but functional app built on Express and Webpack.
+## Description
 
-If you want to follow along, start from branch 0-initial-setup. Each branch in this project is a step along the path to creating a fully functional webpack setup. In each branch, there will be a documentation file that lists out the steps taken in that branch (each step is also roughly a git commit if you look at the history) which you can use as a checklist when setting up your own projects. 
+This is a web tool that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites. It uses an exciting new api called Aylien to interact with their NLP system. This tool will give us back pertinent information about the article, like whether the content is subjective (opinion) or objective (fact-based) and whether it is positive, neutral, or negative in tone.
 
-## What we will cover
+Node and express are the webserver and routing, and webpack is the build tool of choice. Using webpack, I set up the app to have dev and prod environments, each with their own set of tools and commands.
 
-We will cover:
+The goal of this project is to practice with:
 
-- Webpack entry point
-- Webpack output and dist folder
-- Webpack Loaders
-- Webpack Plugins
-- Webpack Mode
-- Tools for convenient Webpack development
+- Setting up Webpack
+- Sass styles
+- Webpack Loaders and Plugins
+- Creating layouts and page design
+- Service workers
+- Using APIs and creating requests to external urls
 
 ## Get Up and Running
 
@@ -25,5 +25,14 @@ git clone -- git@github.com:[your-user-name]/webpack-express.git --
 
 `cd` into your new folder and run:
 - ```npm install```
-- ```npm start``` to start the app
-- this app runs on localhost:8080, but you can of course edit that in server.js
+## Run In Development
+- Run npm run build-dev
+## Run In Production
+- Run npm run build-prod
+Visit localhost:8080 on your browser
+## Testing
+Jest is the tool of choice for running tests on the app. To test, run npm test in the terminal.
+
+## API
+The Aylien text analysis API was used in this project.
+
