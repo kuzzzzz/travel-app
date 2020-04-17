@@ -64,7 +64,7 @@ function handleSubmit(event) {
         document.getElementById('desc2').innerHTML = "TimeZone: " + data.data[0].timezone
         document.getElementById('desc3').innerHTML = "Time of Forcast:" + data.data[0].ob_time
 
- console.log(data)
+      // console.log(data)
       } catch(error) {
         console.log(error);
       }
