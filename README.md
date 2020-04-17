@@ -1,19 +1,29 @@
-# Udacity Project: Evaluate a news article with Natural Language Processing
+# Udacity Front End Nanodegree Capstone Project
 
-## Description
+## A Travel Booking App
+This project is an app that takes a desired location from a user and displays the weather and an image of the location using information obtained from external APIs. It also displays some facts about the trip destination like the currency and flag.
 
-This is a web tool that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites. It uses an exciting new api called Aylien to interact with their NLP system. This tool will give us back pertinent information about the article, like whether the content is subjective (opinion) or objective (fact-based) and whether it is positive, neutral, or negative in tone.
+The project makes use of tecnologies such as HTML, CSS, SASS, JavaScript, Node.js, Express.js, API, Webpack, Babel, and Jest
+
+
 
 Node and express are the webserver and routing, and webpack is the build tool of choice. Using webpack, I set up the app to have dev and prod environments, each with their own set of tools and commands.
 
-The goal of this project is to practice with:
+## Project Requirements
+- Webpack config should contain at least 3 scripts, express server, build and test. Additionally, dev server may be included.
+- There should be at least one test for the express server and application javascript.
+- The project must have service workers installed.
+- All features are usable across modern desktop, tablet, and phone browsers.
+- Styling is set up in a logical way. All interactive elements have hover states.
+- HTML structure should be indented properly with classes and ID’s that make sense.
+- There should be URLS and API Keys for at least 3 APIs, including Geonames, Weatherbit, and Pixabay. You can feel free to use more than 3 APIs.
+- There should be a primary object with placeholder member value pairs.
+- There should be a primary function that is exported to index.js.
 
-- Setting up Webpack
-- Sass styles
-- Webpack Loaders and Plugins
-- Creating layouts and page design
-- Service workers
-- Using APIs and creating requests to external urls
+## Project Suggestions That Were Implemented
+- Pull in an image for the country from Pixabay API when the entered location brings up no results (good for obscure localities).
+- Integrate the REST Countries API to pull in data for the country being visited.
+- Incorporate icons into forecast.
 
 ## Get Up and Running
 
@@ -34,5 +44,8 @@ Visit localhost:8080 on your browser
 Jest is the tool of choice for running tests on the app. To test, run npm test in the terminal.
 
 ## API
-The Aylien text analysis API was used in this project.
-
+The this project uses the following APi
+- Geonames
+- Weatherbit
+- Pixabay
+- REST Countries

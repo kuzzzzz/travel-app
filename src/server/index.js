@@ -3,9 +3,9 @@ dotenv.config();
 var path = require('path')
 const express = require('express')
 
-const mockAPIResponse = require('./mockAPI.js')
-const aylien = require("aylien_textapi");
 const bodyParser = require('body-parser')
+const apiCalls = require('./apiCalls');
+
 
 const app = express()
 const cors = require('cors')
@@ -24,25 +24,27 @@ app.get('/', function (req, res) {
     res.sendFile(path.resolve('dist/index.html'))
 
 })
-const textapi = new aylien({
-    application_id: process.env.API_ID,
-    application_key: process.env.API_KEY
-  });
 
-app.post('/article', getArticle)
-function getArticle(req,res) {
-  textapi.sentiment({
-    url: req.body.url
-    }, 
-    function(error, response) {
-      appData.push(response)
-      // console.log(appData)
-      res.send(appData);
-    }
-  );
-  
-}
+
+
+app.post('/getCoordinates', apiCalls.getCoordinates)
+
+
+
+app.post('/getWeather', apiCalls.getWeather)
+
+
+
+app.post('/getImage', apiCalls.getImage)
+
+
+app.post('/getCountryDetail', apiCalls.getCountryDetail)
+
+
+
 
   app.listen(8081, function () {
     console.log('Example app listening on port 8081!')
   })
+
+  
