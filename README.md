@@ -35,6 +35,15 @@ git clone -- git@github.com:[your-user-name]/webpack-express.git --
 
 `cd` into your new folder and run:
 - ```npm install```
+
+and 
+- ```npm start```
+ run the local server
+
+## Screanshoot
+here are some screenshots of the working app 
+Format: ![Screenshot](screenshoot\Screenshot2.png)
+
 ## Run In Development
 - Run npm run build-dev
 ## Run In Production
