@@ -42,7 +42,9 @@ and
 
 ## Screanshoot
 here are some screenshots of the working app 
-Format: ![Screenshot](screenshoot\Screenshot2.png)
+Format: ![Screenshot](screenshoot/Screenshot2.png)
+Format: ![Screenshot](screenshoot/Screenshot3.png)
+
 
 ## Run In Development
 - Run npm run build-dev
